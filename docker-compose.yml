@@ -1,0 +1,48 @@
+version: '3.1'
+
+services:
+
+  drupal:
+    image: lliccien/drupal
+    container_name: codeigniter_php
+    ports:
+      - 80:80
+    volumes:
+      - ./:/var/www/html/
+      - ./logs:/var/log/apache2/
+      #- ./modules:/var/www/html/modules
+      #- ./themes:/var/www/html/themes
+    #restart: always
+    links:
+      - mysql
+    environment:
+      PHP_XDEBUG_ENABLED: 1 # Set 1 to enable.
+      XDEBUG_CONFIG: remote_host=localhost
+    networks:
+        net:
+            ipv4_address: 172.23.0.3
+
+
+  mysql:
+    image: mysql:5.7
+    container_name: codeigniter_musql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: codeigniter
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    #restart: always
+    networks:
+        net:
+            ipv4_address: 172.23.0.2
+
+
+networks:
+    net:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+                - subnet: 172.23.0.0/16

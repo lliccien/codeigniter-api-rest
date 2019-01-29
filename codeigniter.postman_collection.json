@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "575f2ecb-b63b-47b5-9271-8442c93ba604",
+		"name": "codeigniter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/api/users",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/api/users/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "laldasljkdhakd",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jkdhfkhadskjfhkdsfasdfasdfsdfdsfdfsdfdfyy",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "lsdajdlfhjkshkf",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "lksdjlkfjdslfjlkdsjfld",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/users",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Upload image to User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/users/upload/10",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"users",
+						"upload",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "laldasljkdhakd",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jkdhfkhadskj6dsdsd",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "lsdajdlfhjkshkf",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "lksdjlkfjdslfjlkdsjfld",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/users/6",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "laldasljkdhakd",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jkdhfkhadskj6dsdsd",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "lsdajdlfhjkshkf",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "lksdjlkfjdslfjlkdsjfld",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/users/2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

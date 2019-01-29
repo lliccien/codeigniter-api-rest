@@ -1,0 +1,7 @@
+PHP Warning:  Module 'uploadprogress' already loaded in Unknown on line 0
+[Sun Jan 27 19:57:09.563993 2019] [mpm_prefork:notice] [pid 9] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sun Jan 27 19:57:09.564645 2019] [core:notice] [pid 9] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Sun Jan 27 19:59:51.908299 2019] [mpm_prefork:notice] [pid 9] AH00169: caught SIGTERM, shutting down
+PHP Warning:  Module 'uploadprogress' already loaded in Unknown on line 0
+[Sun Jan 27 19:59:55.544690 2019] [mpm_prefork:notice] [pid 9] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sun Jan 27 19:59:55.545252 2019] [core:notice] [pid 9] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
